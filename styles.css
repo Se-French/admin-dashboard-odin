@@ -1,30 +1,133 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 li {
     list-style: none;
 }
 
+body {
+    margin: 0;
+}
+
 #container {
+    border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: minmax(1fr, 100px) 5fr;
+}
+
+header {
+    grid-column: 2 / 4;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.head-one {
+    display: grid;
+    grid-template-columns: min-content auto min-content min-content minmax(min-content, max-content);
+}
+
+#search-icon,
+#notifications-icon {
+    place-self: center end;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+#birdie {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    justify-self: end;
+    margin-right: 1em; 
+}
+
+.head-one span {
+    align-self: center;
+    padding-right: 2em;
+    font-weight: bold;
+}
+
+input {
+    margin-right: 15%;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.head-two {
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    align-items: space-between;
+}
+
+#birdie-two {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin-left: 3em;
+    align-self: center;
+}
+
+#greeting {
+    place-self: center start;
+    margin-left: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    place-self: center end;
+    padding-right: 2em;
+} 
+
+.buttons button {
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: .5em 1em;
+    width: 7em;
+    margin: .5em;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 #sidebar {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
-}
-
-header {
-    grid-column: 2 / 4;
+    border: 1px solid black
 }
 
 #projects {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 1.5em;
+}
+
+#projects-content div{
+    border: 1px solid black;
+    border-radius: 12px;;
 }
 
 #right-content {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    display: grid;
+    gap: 1.5em;
+    border: 1px solid black;
+    /*align-items: start;*/
+}
+
+.announcements,
+.trending{
+    border: 1px solid black;
+    border-radius: 12px;
 }

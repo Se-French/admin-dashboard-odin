@@ -6,28 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="container">
     <header>
-        <input type="text" placeholder="Search...">
-
-        <div id="name">
-            <!--notification??-->
-            <img>
-            <span>Samanth French</span>
+        <div class="head-one">
+            <svg id="search-icon" width="2em" height="2em"
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24">
+                <title>magnify</title>
+                <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </svg>
+            <input type="text" id="search" name="search" placeholder="">
+            <svg id="notifications-icon" width="2em" height="2em"
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24">
+                <title>bell-ring-outline</title>
+                <path d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+            </svg>
+            <img id="birdie" src="images/bird.jpg" alt="a hungry lil birdie by Lucas Pezeta">
+            <span>Samantha French</span>
         </div>        
 
-        <div id="greeting">
-            <img>
-            <p>Hi there, Samantha French(@SeFrench)</p>
-        </div>
-
-        <div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+        <div class="head-two">
+            <img id="birdie-two" src="images/bird.jpg" alt="a hungry lil birdie by Lucas Pezeta">
+            <p id="greeting"><small>Hi there,</small><br /> Samantha French</p>
+            <div class="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
     </header>
 
@@ -49,35 +61,38 @@
     <!--<div id="main-content">-->
         <div id="projects">
             <h2>Your Projects</h2>
-            <div>
-                <h4>Super Cool Project</h4>
-                 <p>Lorem ipsum</p>   
-            </div>
-            <div>
-                <h4>Less Cool Project</h4>
-                <p>Lorem ipsum</p>
-            </div>
-            <div>
-                <h4>Impossible App</h4>
-                <p> Lorem ipsum</p>
-            </div>
-            <div>
-                <h4>Easy Peasy App</h4>
-                <p>Lorem ipsum</p>
-            </div>
-            <div>
-                <h4>Ad Blocker</h4>
-                <p>Lorem ipsum</p>
-            </div>
-            <div>
-                <h4>Money Maker</h4>
-                <p>Lorem ipsum</p>
+            <div id="projects-content">
+                <div>
+                    <h4>Super Cool Project</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem pariatur, fuga sequi magni ad fugit minima at alias aliquid consectetur doloremque nostrum quasi soluta ex sint eaque, rerum tempora. Asperiores.</p>   
+                </div>
+                <div>
+                    <h4>Less Cool Project</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet hic minima repellat incidunt libero at culpa eius voluptatum reprehenderit, quisquam nobis cumque earum omnis repellendus atque quo voluptate neque unde.</p>
+                </div>
+                <div>
+                    <h4>Impossible App</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga id tempora non accusantium a, est similique consequatur sapiente nobis perspiciatis at! Illo, suscipit! Magni maiores neque nihil explicabo doloribus blanditiis.</p>
+                </div>
+                <div>
+                    <h4>Easy Peasy App</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, ducimus accusamus eveniet ratione nisi sapiente quaerat nesciunt voluptas perspiciatis enim amet iusto voluptatem error? Consequuntur minus cumque ut quos.</p>
+                </div>
+                <div>
+                    <h4>Ad Blocker</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa qui eius ad error totam et quae hic. Quis esse corporis illum pariatur, quod placeat! Veniam ratione quisquam amet provident. Et.</p>
+                </div>
+                <div>
+                    <h4>Money Maker</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos repellat eveniet, officiis aliquid reprehenderit eius laborum animi, laboriosam ullam provident molestias incidunt laudantium qui soluta deserunt aliquam adipisci. Amet, commodi!</p>
+                </div>
             </div>
         </div>
 
         <div id="right-content">    
-            <div id="announcements">
+            <!--<div class="announcements">-->
                 <h4>Announcements</h4>
+                <div class="announcements">
                 <div>
                     <h5>Site Maintenance</h5>
                     <p>Lorem ipsum</p>
@@ -90,15 +105,16 @@
                     <h5>Updated Privacy Policy</h5>
                     <p>Lorem ipsum</p>
                 </div>
-            </div>
+                </div>
 
-            <div id="trending">
+            <!--<div class="trending">-->
                 <h4>Trending</h4>
+                <div class="trending">
                 <div>user1</div>
                 <div>user2</div>
                 <div>user3</div>
                 <div>user4</div>
-            </div>
+                </div>
         </div>
     <!--</div>-->
     </div>
