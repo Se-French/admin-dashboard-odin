@@ -122,6 +122,7 @@ li {
     display: grid;
     grid-template-columns: min-content 1fr;
     padding-bottom: 1em;
+    font-weight: 600;
 }
 
 li svg {
@@ -144,17 +145,48 @@ li div {
     grid-column: 2 / 3;
     border: 1px solid black;
     padding: 1em;
+    padding-bottom: 4em;
 }
 
-#projects-content {
+#projects h2 {
+    margin-left: .5em;
+}
+
+.projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     gap: 1.5em;
 }
 
-#projects-content div{
+.card {
     border: 1px solid black;
-    border-radius: 12px;;
+    border-radius: 12px;
+    padding: 1em 2em;
+    display: grid;
+}
+
+.card h4 {
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.card p {
+    margin-top: .2em;
+}
+
+.star,
+.eye,
+.branch {
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 1em;;
+}
+
+.icons {
+    border-style: none;
+    display: flex;
+    justify-content: end;
+    align-self: end;
 }
 
 #right-content {
