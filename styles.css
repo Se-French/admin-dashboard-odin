@@ -7,6 +7,7 @@ body {
 }
 
 #container {
+    width: fit-content;
     border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -26,11 +27,14 @@ header {
     grid-template-columns: min-content auto min-content min-content minmax(min-content, max-content);
 }
 
-#search-icon,
-#notifications-icon {
+#search-icon {
     place-self: center end;
     padding-left: 2em;
     padding-right: 1em;
+}
+
+#notifications-icon {
+    place-self: center end;
 }
 
 #birdie {
@@ -38,12 +42,13 @@ header {
     width: 3em;
     border-radius: 50%;
     justify-self: end;
-    margin-right: 1em; 
+    margin-right: 1em;
+    margin-left: 1em; 
 }
 
-.head-one span {
+.head-one div {
     align-self: center;
-    padding-right: 2em;
+    margin-right: 2em;
     font-weight: bold;
 }
 
@@ -76,7 +81,7 @@ input {
 
 .buttons {
     place-self: center end;
-    padding-right: 2em;
+    margin-right: 2em;
 } 
 
 .buttons button {
@@ -97,7 +102,7 @@ input {
 
 .dashboard {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: min-content min-content;
     margin-top: 0;
 }
 
@@ -106,6 +111,7 @@ input {
     width: 2em;
     padding: 0 .3em 0 .5em;
     place-self: center;
+
 }
 
 .dashboard p {
