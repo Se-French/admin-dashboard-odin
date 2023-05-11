@@ -143,7 +143,7 @@ li div {
 #projects {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 1em;
     padding-bottom: 4em;
 }
@@ -190,16 +190,67 @@ li div {
 }
 
 #right-content {
+    /*border: 1px solid black;*/
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     display: grid;
-    gap: 1.5em;
-    border: 1px solid black;
-    /*align-items: start;*/
+    grid-template-rows: repeat(4, min-content);
 }
 
-.announcements,
-.trending{
+.ann {
+    margin: 2.3em auto 1em 0;
+    align-self: end;
+}
+
+.announcements/*,
+.trending*/{
+    padding: 1em 2em;
+    margin-right: 2em;
     border: 1px solid black;
     border-radius: 12px;
+    align-self: start;
+}
+
+.announcements h5 {
+    font-size: 1em;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.announcements p {
+    margin-top: .3em;
+}
+
+.underline {
+    border-bottom-style: solid;
+    border-bottom-width: .1em;;
+    padding-bottom: 1em;
+}
+
+.trend {
+    margin: 2em auto .5em 0;
+    align-self: start;
+}
+
+.trending {
+    margin-right: 2em;
+    border: 1px solid black;
+    border-radius: 12px;
+    align-self: start;
+}
+
+.trending div{
+    display: flex;
+    gap: .3em;
+    margin: .6em;
+}
+
+.trending div img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.trending div span {
+    font-weight: bold;
 }
