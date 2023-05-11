@@ -103,24 +103,25 @@ input {
 .dashboard {
     display: grid;
     grid-template-columns: min-content min-content;
-    margin-top: 0;
+    margin: 1.2em 0 3em .5em;
 }
 
 .dashboard svg {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     padding: 0 .3em 0 .5em;
     place-self: center;
 
 }
 
-.dashboard p {
+.dashboard div {
     place-self: center start;
+    font-weight: bolder;
+    font-size: 1.8em;
 }
 
 ul {
-    padding-left: 0;
-    margin-left: 0;
+    padding-left: .5em;
 }
 
 li {
