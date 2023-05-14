@@ -174,20 +174,19 @@ li div {
     border-radius: 12px;
     padding: 1em 2em;
     display: grid;
-    grid-template-rows: min-content;
+    height: 90%;
+    grid-template-rows: min-content min-content 1fr;
     box-shadow: 5px 5px 5px #bbf7d0,
                 inset .5em 0em rgb(247, 210, 3);
 }
 
 .card h4 {
     margin-bottom: 0;
-    padding-bottom: 0;
     font-weight: bolder;
 }
 
 .card p {
     margin-top: .2em;
-    padding-top: 0;
     color: #3e4e39;
 }
 
