@@ -25,14 +25,13 @@ header {
     grid-template-columns: min-content auto min-content min-content minmax(min-content, max-content);
 }
 
-#search-icon {
+.head-one a{
     place-self: center end;
-    padding-left: 2em;
-    padding-right: 1em;
 }
 
-#notifications-icon {
-    place-self: center end;
+#search-icon {
+    padding-left: 2em;
+    padding-right: 1em;
 }
 
 #birdie {
@@ -50,12 +49,21 @@ header {
     font-weight: bold;
 }
 
+.head-one svg:hover {
+    fill: #dfa60b;
+}
+
 input {
     margin-right: 15%;
     border-radius: 30px;
     border-style: none;
     background-color: #dcfce7;
 }
+
+input:hover {
+    outline: 2px solid #2c7a48;
+}
+
 
 .head-two {
     display: grid;
@@ -93,6 +101,10 @@ input {
     font-weight: 600;
     background-color: #2c7a48;
     color:#ffffff;
+}
+
+.buttons button:hover {
+    background-color: #dfa60b;
 }
 
 #sidebar {
@@ -139,6 +151,13 @@ li svg {
     height: 1.5em;
     padding-left: 1em;
     fill: #ffffff;
+}
+
+.top-list li:hover,
+.bottom-list li:hover,
+li svg:hover {
+    color: #dfa60b;
+    fill: #dfa60b;
 }
 
 li div {
@@ -190,12 +209,14 @@ li div {
     color: #3e4e39;
 }
 
-.star,
-.eye,
-.branch {
+.card svg {
     height: 1.5em;
     width: 1.5em;
-    margin-left: 1em;;
+    margin-left: 1em;
+}
+
+.card svg:hover {
+    fill: #dfa60b;
 }
 
 .icons {
@@ -232,6 +253,10 @@ li div {
     font-size: 1em;
     font-weight: bolder;
     margin-bottom: 0;
+}
+
+.announcements h5:hover {
+    color:#dfa60b;
 }
 
 .announcements p {
@@ -273,6 +298,10 @@ li div {
 
 .trending div span {
     font-weight: bold;
+}
+
+.trending div span:hover {
+    color: #dfa60b;
 }
 
 .second {
