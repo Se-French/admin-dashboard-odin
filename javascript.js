@@ -11,7 +11,6 @@ buttons.forEach(button => {
 
 function redirect(event){
     window.location.href = 'other_page/second.html';
-    console.log('Good job, this is working!');
 }
 
 
