@@ -25,3 +25,13 @@ svg {
     height: 5em;
     fill: #384938;
 }
+
+a {
+    text-decoration: none;
+    color: #384938;
+    margin-top: 1em;
+}
+
+a:hover {
+    color: #dfa60b;
+}
