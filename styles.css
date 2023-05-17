@@ -140,10 +140,13 @@ ul {
 
 li {
     list-style: none;
-    display: grid;
-    grid-template-columns: min-content 1fr;
     padding-bottom: 1em;
     font-weight: 600;
+}
+
+li a {
+    display: grid;
+    grid-template-columns: min-content 1fr;
 }
 
 li svg {
